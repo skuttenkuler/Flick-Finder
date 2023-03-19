@@ -1,10 +1,15 @@
 import React from "react"
+import Searchbar from "../../components/Searchbar/Searchbar";
 
 
 
 const HomePage: React.FunctionComponent = () => {
     return (
-        <div>HomePage</div>
+        <div>
+            <Searchbar/>
+
+
+        </div>
     )
 };
 
