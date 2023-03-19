@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import { getAxiosData } from "../../api";
 
 
 
@@ -6,7 +7,7 @@ const Searchbar: React.FunctionComponent = () => {
     // handle user input
     const [input, setInput] = useState('');
     const handleMovieSearch = () => {
-        console.log(input)
+        getAxiosData(input)
     }
 
     return (
