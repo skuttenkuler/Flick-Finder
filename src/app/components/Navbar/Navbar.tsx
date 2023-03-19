@@ -1,14 +1,21 @@
 import React from "react"
 import Container from "react-bootstrap/Container"
-import Navbar from "react-bootstrap/Navbar"
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import './style.css'
 
 const Navigation: React.FunctionComponent = () => {
     return (
         <Container>
-            <Navbar expand="lg" variant="light" bg="light">
+            <Navbar className="navbar" collapseOnSelect expand="lg" variant="light" bg="light">
                 <Container>
-                    <Navbar.Brand href="/">Home</Navbar.Brand>
-                    <Navbar.Brand href="/about">About</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="me-auto">
+                        <Navbar.Brand className="link-text" href="/">Home</Navbar.Brand>
+                        <Navbar.Brand className="link-text" href="/about">About</Navbar.Brand>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </Container>

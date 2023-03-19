@@ -1,0 +1,16 @@
+.link-text{
+    color: #e2e8f0;
+}
+.link-text:hover{
+    color:#e2e8f0;
+    text-decoration: underline;
+}
+.navbar{
+    background: transparent !important;
+}
+button.navbar-toggler.collapsed{
+    background-color: #e2e8f0;
+}
+button.navbar-toggler{
+    background-color: #e2e8f0;
+}

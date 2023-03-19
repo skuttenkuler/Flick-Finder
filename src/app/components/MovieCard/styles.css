@@ -1,0 +1,10 @@
+.movie-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-title{
+    position: absolute;
+    bottom: 5%;
+}
