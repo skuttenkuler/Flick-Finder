@@ -1,11 +1,13 @@
 import React from "react"
 
-import { IMovie, Movies } from "../../models/movie";
+import { IMovie } from "../../models/movie";
 import MovieCard from "../MovieCard/MovieCard";
 
 
 
 const Grid: React.FunctionComponent<any> = (data: any) => {
+    //map through returned data and pass to Movie Card
+    //console.log(data)
     return (
         <div>
             {data.data.map((movie: IMovie) => {

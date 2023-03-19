@@ -3,7 +3,7 @@ import { IMovie } from "../../models/movie";
 
 
 const MovieCard: React.FunctionComponent<IMovie> = (movie: IMovie) => {
-    console.log(movie)
+    //console.log(movie)
     return (
         <div>
             <img src={movie.Poster} alt={movie.Title}/>
