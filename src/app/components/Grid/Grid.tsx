@@ -6,6 +6,7 @@ import MovieCard from "../MovieCard/MovieCard";
 
 
 
+
 const Grid: React.FunctionComponent<any> = (data: any) => {
     //map through returned data and pass to Movie Card
     //console.log(data)

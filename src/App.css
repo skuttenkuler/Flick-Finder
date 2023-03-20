@@ -1,7 +1,7 @@
 .App{
     background-image: url("../public/SiteBackground.png");
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 100%;
+    background-size: fill;
+    min-height: 100%;
     
 }

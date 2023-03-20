@@ -5,4 +5,4 @@ export interface IMovie{
     Type: string,
     Poster: string
 }
-export type Movies = IMovie[]
+export type Movies = {data: IMovie[]}
