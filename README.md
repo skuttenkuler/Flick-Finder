@@ -4,6 +4,18 @@ A React Application with TypeScript for searching for the movies that are on you
 
 ![Alt text](./public/images/site_gif.gif "Preview")
 
+## Local Deployment
+* Clone Repository to your computer.
+* cd Flick-Finder/
+* yarn install
+* yarn start
+
+## Technologies Used
+
+* [React](https://react.dev/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Bootstrap](https://getbootstrap.com/)
+
 
 ## Technologies Used
 
