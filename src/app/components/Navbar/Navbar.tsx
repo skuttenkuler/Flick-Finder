@@ -7,7 +7,7 @@ import './style.css'
 const Navigation: React.FunctionComponent = () => {
     return (
         <Container>
-            <Navbar className="navbar" collapseOnSelect expand="lg" variant="light" bg="light">
+            <Navbar className="navbar" collapseOnSelect expand="lg">
                 <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

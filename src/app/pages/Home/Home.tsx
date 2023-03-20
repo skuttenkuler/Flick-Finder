@@ -1,24 +1,28 @@
 import React,{useEffect, useState} from "react"
 import { getAxiosData } from "../../api";
-import { IMovie, Movies } from "../../models/movie"
+import { IMovie } from "../../models/movie"
 import './styles.css'
 import CarouselComp from '../../components/Carousel/Carousel'
 const HomePage: React.FunctionComponent = () => {
     const [movies, setMovies] = useState<IMovie[]>([])
-    const [input, setInput] = useState("Tron")
+    const [input, setInput] = useState("")
     
     const handleMovieSearch = () => {
         //console.log(input)
         getAxiosData(input)
         .then(res=> {
-            //console.log(movieData)
-            setMovies(res["Search"]  || "No movie by that title.")
+            if(res.Error){
+                window.alert("No movie by that name, please try again!")
+            }else{
+            setMovies(res["Search"])
+            }
         })
+        .catch(err => console.log(err))
     }
 
     //fetch on page load 
     useEffect(() => {
-        getAxiosData(input)
+        getAxiosData("Star Wars")
         .then(res=> {
             //console.log(res["Search"])
             setMovies(res["Search"])

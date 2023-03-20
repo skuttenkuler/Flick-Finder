@@ -15,12 +15,83 @@
     height: 40vh;
     align-items: center;
     border-radius:50px;
+    margin-bottom: 5%;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
 }
 .banner h1{
     font-size:5vw;
     text-shadow: 1px 1px 2px #d8b4fe;
+    text-decoration: underline;
 }
-.input_wrapper > button{
+.banner p{
+    font-size:2vw;
+    text-shadow: 1px 1px 1px grey;
+}
+.input_wrapper{
+    display: unset;
+}
+    
+.input_wrapper input{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 3vw;
+    border-style: none;
+}
+.input_wrapper button{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 3vw;
+    border-style: none;
+    color: #f0f9ff;
+    background-color: #bf26d2;
+}
+@media only screen and (max-width: 992px) {
+    .banner{
+        width: 80%;
+        text-align: center;
+    }
+    .banner h1{
+        font-size:7vw;
+        text-shadow: 1px 1px 2px #d8b4fe;
+    }
+    .banner p{
+        font-size:2.5vw;
+    }
+    .input_wrapper{
+        display: unset;
+    }
+    .input_wrapper input{
+       
+        height: 6vw;
+    }
+    .input_wrapper button{
+        height: 6vw;
+    }
+  }
 
+  @media only screen and (max-width: 500px) {
+    .banner p{
+        font-size: 3vw;
+        width: 50%;
+    }
+    .carousel-control-next {
+        right: -20px;
+    }
+    .carousel-control-prev {
+        left: -20px;
+    }
+    .input_wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .input_wrapper input{
+        border-radius: 15px;
+        height: 10vw;
+        margin-bottom:10%;
+        text-align: center;
+    }
+    .input_wrapper button{
+        border-radius: 15px;
+        height: 10vw;
+    }
 }
