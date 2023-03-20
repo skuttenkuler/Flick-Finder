@@ -1,10 +1,18 @@
-.layout{
+.about_layout{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    height: 80vh;
+    justify-content: center;
+    text-align: center;
 }
-.banner{
+header{
+    color:#f0f9ff;
+    font-size:5vw;
+    text-shadow: 1px 1px 2px #d8b4fe;
+    text-decoration: underline;
+}
+.about_banner{
     color: #f0f9ff;
     background: rgb(91,81,81, 0.1);
     backdrop-filter: blur(5px);
@@ -12,18 +20,35 @@
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    height: 40vh;
+    height: 50vh;
     align-items: center;
     border-radius:50px;
     margin-bottom: 5%;
+    padding: 5%;
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
 }
-.banner h1{
-    font-size:5vw;
-    text-shadow: 1px 1px 2px #d8b4fe;
-    text-decoration: underline;
-}
-.banner p{
+
+.about-text, .about-link,.about-link a{
     font-size:2vw;
     text-shadow: 1px 1px 1px grey;
+}
+
+
+@media only screen and (max-width: 992px) {
+    header{
+        font-size:7vw;
+    }
+}
+@media only screen and (max-width: 500px) {
+    header{
+        font-size:10vw;
+    }
+    .about_banner{
+        height: 60vh;
+        width: 80%;
+    }
+    .about-text, .about-link{
+        font-size:4vw;
+        text-shadow: 1px 1px 1px grey;
+    }
 }
