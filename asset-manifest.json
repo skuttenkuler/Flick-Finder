@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/skuttenkuler/Flick-Finder/static/css/main.8175f97c.css",
+    "main.js": "/skuttenkuler/Flick-Finder/static/js/main.8d0f10fb.js",
+    "static/media/SiteBackground.png": "/skuttenkuler/Flick-Finder/static/media/SiteBackground.e3b20817c3e2c4c96ad5.png",
+    "static/media/SiteBackground_mobile.png": "/skuttenkuler/Flick-Finder/static/media/SiteBackground_mobile.479178ab4613a3003781.png",
+    "index.html": "/skuttenkuler/Flick-Finder/index.html",
+    "main.8175f97c.css.map": "/skuttenkuler/Flick-Finder/static/css/main.8175f97c.css.map",
+    "main.8d0f10fb.js.map": "/skuttenkuler/Flick-Finder/static/js/main.8d0f10fb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8175f97c.css",
+    "static/js/main.8d0f10fb.js"
+  ]
+}
