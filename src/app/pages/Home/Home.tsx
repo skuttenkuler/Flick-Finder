@@ -1,10 +1,10 @@
 import React,{useEffect, useState} from "react"
 import { getAxiosData } from "../../api";
-import { Movies } from "../../models/movie"
+import { IMovie, Movies } from "../../models/movie"
 import './styles.css'
 import CarouselComp from '../../components/Carousel/Carousel'
 const HomePage: React.FunctionComponent = () => {
-    const [movies, setMovies] = useState<Movies>([])
+    const [movies, setMovies] = useState<IMovie[]>([])
     const [input, setInput] = useState("Tron")
     
     const handleMovieSearch = () => {
