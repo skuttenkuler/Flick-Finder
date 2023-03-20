@@ -32,7 +32,11 @@ header{
     font-size:2vw;
     text-shadow: 1px 1px 1px grey;
 }
-
+.about-link a{
+    color: #f0f9ff !important;
+    font-size:2vw;
+    text-shadow: 1px 1px 2px #d8b4fe;
+}
 
 @media only screen and (max-width: 992px) {
     header{
@@ -50,5 +54,8 @@ header{
     .about-text, .about-link{
         font-size:4vw;
         text-shadow: 1px 1px 1px grey;
+    }
+    .about-link a{
+        font-size:5vw;
     }
 }
